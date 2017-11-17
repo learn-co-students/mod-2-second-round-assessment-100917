@@ -1,0 +1,18 @@
+
+
+
+
+
+
+ <!-- As a user, I should be able to view all of the
+ guests for a particular episode.
+ This means that we'll need an episode's show page
+ that lists out all of the guests who were on that episode. I would iterate through the episode appearances in order to get the particular guest -->
+
+
+
+
+<!-- running out of time but just a quick try in code but , i know i need to access guests through appearnaces using dot notation  -->
+
+<% @episode.appearances.each do |appearance|%>
+<%= appearance.guests %>
