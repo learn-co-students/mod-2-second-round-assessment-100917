@@ -1,0 +1,7 @@
+<h1>Make a New Appearance</h1>
+<%=form_for @appearance do |f|, url: appearance_path %>
+<%=f.collection_select(@appearance, :guest_id, Guest.all, :guest_id, :number)%>
+<%=f.collection_select(@appearance, :episode_id, Episode.all, :name)%>
+Rating: <%=f.text_field :rating %>
+<%= f.submit %>
+<% end %>

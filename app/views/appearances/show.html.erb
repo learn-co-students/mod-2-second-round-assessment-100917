@@ -1,0 +1,6 @@
+<h1>Episode</h1>
+<%link_to "Episode #{@appearance.episode_id}", episode_path(@appearance.episode_id) %>
+
+
+<h1>Guests</h1>
+<%link_to "#{Guest.all[@appearance.guest_id - 1].name}", guest_path(@appearance.guest_id) %>
