@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
 
-  def new
+
+  def destroy
+    session[:user_id]=nil
   end
 
-  def create
-  end
+
 
 end

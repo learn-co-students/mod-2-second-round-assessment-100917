@@ -1,0 +1,9 @@
+
+<h1>Episode: <%=@episode.number%></h1>
+<h2>Aired On: <%=@episode.date%></h2>
+<ul>
+  <%@episode.guests.each do |guest|%>
+  <li><%=guest.name%></li>
+</ul>
+
+<%end%>
