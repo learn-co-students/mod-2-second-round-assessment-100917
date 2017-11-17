@@ -1,0 +1,9 @@
+<%= form_for @appearance do |f| %>
+<%= f.label :guest %>:
+<%= f.collection_select :guest_id, Guest.all, :id, :name %>
+<%= f.label :epsiode %>:
+<%= f.collection_select :episode_id, Episode.all, :id, :date %>
+<%= f.label :rating %>:
+<%= f.select(:rating, [["1",1],["2",2],["3",3],["4",4],["5",5]]) %>
+<%= f.submit %>
+<% end %>
